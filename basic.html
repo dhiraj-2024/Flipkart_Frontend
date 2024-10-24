@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipcart clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+ 
+    .gallary{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .l1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pro1 {
+        
+        height: 300px;
+        width:250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .long2-box {
+
+
+        align-items: center;
+        /* display: flex; */
+        /* justify-self: center; */
+        height: 160px;
+        width: 200px;
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 1px solid rebeccapurple; */
+
+    }
+
+    .logo2 {
+        height: 16px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        background-position-x: center;
+    }
+    .small_card{
+        width: 45px;
+        height: 45px;
+        float: right;
+        position: relative;
+        top: -126px;
+        right: -93px;
+        opacity: 0;
+        border-radius: 7px;
+        transition: 0.3s;
+    }
+    .pro1:hover .small_card {
+        position: relative;
+        top: -126px;
+        right: -90px;
+        opacity: 1;
+        transition-duration: 0.8s;
+    }
+ .small_card i{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+        color: #b7b6b6;
+        cursor: pointer;
+        text-shadow: 0 0 6px #a6a2a2;
+        transition: 0.2s;
+    }
+    .small_card i:hover{
+        color: #ff4976;
+    }
+        .part2{
+            margin-top: -35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+       .pro1 .long2-box:hover{
+            transform: scale(1.1);
+transition-duration: 0.5s;
+        }
+
+</style>
+
+<body>
+
+
+    <header>
+        <div class="navbar">
+
+            <div class="nav-logo">
+                <!-- <img src="/Users/rajputdhiraj/Desktop/dhiraj coding/Html And Css/flipcart clon project/fc-logo.jpg" alt=""> -->
+                <span id="logo_name"> Flipkart </span>
+                <span style="
+                    color: #9e9e9e;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-family: sans-serif;
+                    
+                  ">
+                    Explore
+                    <span style="color: #ffc200"> Plus </span>
+                    <img style="width: 11px;
+              height: 11px;
+              margin-left: 2px;"
+                        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg"
+                        alt="explore_button">
+                </span>
+            </div>
+
+            <div class="nav-search">
+
+                <input type="text" placeholder="Search for products,brands and more">
+
+            </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="nav-user">
+                <i class="fa-regular fa-user"></i>
+                <a href="login.html" class="p1">Login</a>
+            </div>
+            <div class="user-list">
+                <ul>
+                    <!-- <li>My Profile</li>
+              <li>Game Zone</li>
+              <li>Super Coin Zone</li>
+              <li>Orders</li>
+              <li>Wishlist</li>
+              <li>Coupons</li> -->
+
+                </ul>
+            </div>
+            <div class="nav-seller p1">
+                <i class="fa-solid fa-shop"></i>
+                <a href="#" class="p1">Become a Sellor</a>
+
+            </div>
+            <div class="nav-more p1">
+                <a href="#">More</a>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+
+            <div class="nav-cart p1">
+                <i class="fa-solid fa-cart-plus"></i>
+                <p>Cart</p>
+            </div>
+
+        </div>
+        <div class="nav-menu">
+
+            <div class="menu ">
+                <a href="#" class="text">Electronics</a>
+                <a href="#" class="text">TVs & Appliances</a>
+                <a href="#" class="text">Men</a>
+                <a href="#" class="text">Women</a>
+                <a href="#" class="text">Baby & Kids</a>
+                <a href="#" class="text">Home & Furniture</a>
+                <a href="#" class="text">Sport,Books & More</a>
+                <a href="#" class="text">Flights</a>
+                <a href="#" class="text">Offer Zone</a>
+                <a href="#" class="text">Grocerys</a>
+            </div>
+
+        </div>
+        <hr>
+
+    </header>
+
+    <div class="gallary">
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm21.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p> MacBook AIR Apple M2 </p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm23.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm21.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm23.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo21.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm23.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm21.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="pro1">
+            <div class="l1">
+                <div class="long2-box" style="background-image: url('macm2.jpg');">                  
+                </div>
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+               <div class="part2">
+                <p>Macbook Air M1 2020</p>
+                <div class="logo2" style="background-image: url('logo2.jpg');"></div>
+                <p><span class="cut-line">Rs.1,0000</span> Rs.80,000 <span class="green"> 10% off</span></p>
+                <p class="green" style="font-weight: 700;">Bank offer</p>
+                <div class="star" style="font-size: 10px; color: rgb(83, 83, 248); ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+               </div>
+            </div>
+        </div>
+       
+        
+    </div>
+
+    <footer style="margin-top: 100px;">
+
+        <!-- <div class="foot-pannle1">
+            <p>Back to top</p>
+        </div> -->
+
+        <div class="foot-pannle-list1">
+
+            <ul>
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Flipkart Science</a>
+            </ul>
+
+            <ul>
+
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </ul>
+
+
+            <ul>
+                <h3>Make Money with Us</h3>
+                <a href="#"> Sell on Flipkart</a>
+                <a href="#">Sell under Flipkart Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#"> Flipkart Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfilment by Flipkart</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#"> Flipkart Pay on Merchants</a>
+            </ul>
+
+
+            <ul>
+                <h3>Let Us Help You</h3>
+                <a href="#">COVID-19 and Flipkart</a>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Flipkart App Download</a>
+                <a href="#">Help</a>
+            </ul>
+        </div>
+
+
+        <div class="foot-pannale3">
+            <!-- <div class="footlogo"> <div class="nav-logo border">
+        <div class="logo">
+            <p>amazon</p>
+            <p id="psize" style="color: orange;">.in </p>
+        </div></div> -->
+            <!-- <div class="nav-logo">
+                <img src="/Users/rajputdhiraj/Desktop/dhiraj coding/Html And Css/flipcart clon project/fc-logo.jpg"
+                    alt="">
+
+            </div> -->
+            <a style="text-decoration: none;" href="index.html">
+                <div class="nav-logo">
+                    <!-- <img src="/Users/rajputdhiraj/Desktop/dhiraj coding/Html And Css/flipcart clon project/fc-logo.jpg" alt=""> -->
+                    <span class="logo_name"> Flipkart </span>
+                    <span style="
+                    color: #9e9e9e;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-family: sans-serif;
+                    
+                  ">
+                        Explore
+                        <span style="color: #ffc200"> Plus </span>
+                        <img style="width: 11px;
+              height: 11px;
+              margin-left: 2px;"
+                            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg"
+                            alt="explore_button">
+                    </span>
+                </div>
+            </a>
+
+
+            <div class="nav-language border">
+                <i class="fa-solid fa-earth-americas"></i>
+                <select class=" lag-select">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Marathi</option>
+                </select>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="pannle4">
+            <div class="pages">
+                <a> Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            </div>
+
+            <div class="copyright">
+                © 1996-2024, Flipkart.com, Inc. or its affiliates
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
